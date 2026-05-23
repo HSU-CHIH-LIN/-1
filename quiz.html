@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>心理測驗｜淡水助順將軍廟</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">淡水助順將軍廟</a>
+      <nav>
+        <ul>
+          <li><a href="stories.html">神明故事</a></li>
+          <li><a href="temple.html">神明風範</a></li>
+          <li><a href="quiz.html" class="active">心理測驗</a></li>
+          <li><a href="surroundings.html">周邊展示</a></li>
+          <li><a href="visit.html">參訪資訊</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <h1>心理測驗</h1>
+    <p>「今日神明想對你說」— 五題測出你的守護指引</p>
+  </div>
+
+  <main class="page-main">
+    <section id="quiz">
+      <div class="inner" style="padding-top:0;">
+        <div class="quiz-box">
+          <div class="quiz-start" id="quizStart">
+            <p class="quiz-intro">靜心一想，憑直覺選出最貼近你此刻心境的選項。測驗約需兩分鐘，結果僅供娛樂與自我反思，並非占卜定論。</p>
+            <button type="button" class="btn btn-primary btn-block" id="btnStartQuiz">開始測驗</button>
+          </div>
+
+          <div class="quiz-active hidden" id="quizActive">
+            <div class="quiz-progress"><div class="quiz-progress-bar" id="progressBar"></div></div>
+            <p class="quiz-question" id="questionText"></p>
+            <div class="quiz-options" id="optionsContainer"></div>
+          </div>
+
+          <div class="quiz-result" id="quizResult">
+            <div class="result-icon" id="resultIcon"></div>
+            <h3 id="resultTitle"></h3>
+            <p id="resultDesc"></p>
+            <button type="button" class="btn btn-primary btn-block" id="btnRetry">再測一次</button>
+          </div>
+        </div>
+
+        <p class="page-home-link">
+          <a href="index.html" class="btn btn-outline" style="border-color:var(--crimson);color:var(--crimson);">← 返回首頁</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><span>淡水助順將軍廟</span> · <a href="index.html" style="color:var(--gold-light);">首頁</a></p>
+    <p class="footer-note">本網頁為文化推廣示範頁</p>
+  </footer>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

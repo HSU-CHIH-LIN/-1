@@ -1,0 +1,8 @@
+/* style.css — 總樣式（一次引入 base + layout + components） */
+
+@import url("base.css");
+@import url("layout.css");
+@import url("components.css");
+.hero{
+    background-image: linear-gradient(rgba(165, 96, 96, 0.75), rgba(172, 103, 103, 0.75)), url("../images/S__3186696.jpg");
+}
